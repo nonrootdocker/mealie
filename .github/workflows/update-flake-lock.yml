@@ -35,7 +35,7 @@ jobs:
       # what advances Mealie to the latest packaged release. nixpkgs maintains
       # the frontend yarn hash + python dep list for us.
       - name: Update nixpkgs and open PR
-        uses: DeterminateSystems/update-flake-lock@v28
+        uses: DeterminateSystems/update-flake-lock@v29
         with:
           inputs: nixpkgs
           token: ${{ steps.app-token.outputs.token }}
